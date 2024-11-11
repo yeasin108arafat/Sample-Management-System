@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*--------------------------------------------
+                1.  Typhography
+---------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0 !important;
+}
+
+a{
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+img{
+    max-width: 100%;
+}
+
+button:focus{
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+.sec-padd-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sec-padd-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec-title{
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.sec-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    background: #000;
+}
+.sec-title h2 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+.sec-title p {
+    font-size: 24px;
+    line-height: 32px;
+}
+.d-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.d-flex-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.bg-img{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.np{
+    padding: 0 !important;
+}
+.nm{
+    margin: 0 !important;
+}

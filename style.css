@@ -133,7 +133,7 @@ input {
 input:focus{
     outline: 1px solid #000;
 }
-.login-form input[type="submit"] {
+input[type="submit"] {
     background: #F8F8F8;
     background: #ED7D31;
     color: #fff;

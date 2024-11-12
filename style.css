@@ -12,7 +12,8 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    background-color: #F8F8F8;
 }
 :root {
     --orange: #ED7D31;
@@ -264,7 +265,7 @@ input[type="submit"] {
     justify-content: space-between;
     align-items: center;
     background: var(--light-gray);
-    padding-left: 6%;
+    padding-left: 120px;
     box-shadow: 0 0 7px rgba(0,0,0,0.2);
 }
 .header-left h2 {
@@ -349,6 +350,10 @@ input[type="submit"] {
 .view-all-notification a:hover{
     text-decoration: underline !important;
 }
+.sidebar-area ul li a img {
+    max-width: 25px;
+    max-height: 25px;
+}
 
 /* ----------------- End Header-------------- */
 
@@ -412,6 +417,63 @@ input[type="submit"] {
 /* ----------------- Form CSS End-------------- */
 
 
-
-
-
+/* ----------------- Dashboard End-------------- */
+.main-board-wrapper {
+    padding: 108px 20px 30px 120px;
+}
+.breadcrumb-area p {
+    color: #000;
+    font-size: 15px;
+}
+.breadcrumb-area p a{
+    color: #000;
+}
+.breadcrumb-area p a:hover{
+    text-decoration: underline !important;
+}
+.breadcrumb-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.button {
+    color: #ffffff;
+    font-size: 15px;
+    background: #ED7D31;
+    border-radius: 28px;
+    padding: 5px 18px;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: #E27124;
+    color: #fff;
+}
+.profile-img {
+    max-width: 40px;
+    border-radius: 100px;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.table th{
+    font-size: 15px;
+    border: none !important;
+}
+.table td {
+    font-size: 15px;
+    font-weight: 500;
+}
+.dashboard-widget{
+    background-color: #fff;
+}
+.action-btn-group button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
+.action-btn-group button:hover{
+    background-color: var(--light-gray);
+}
+/* ----------------- Dashboard Start-------------- */

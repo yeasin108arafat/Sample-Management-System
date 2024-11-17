@@ -189,6 +189,7 @@ input[type="submit"] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    z-index: 99999;
 }
 .sidebar-area ul {
     display: -ms-grid;
@@ -271,6 +272,7 @@ input[type="submit"] {
     background: var(--light-gray);
     padding-left: 120px;
     box-shadow: 0 0 7px rgba(0,0,0,0.2);
+    z-index: 9999;
 }
 .header-left h2 {
     font-size: 22px;
@@ -470,18 +472,22 @@ input[type="submit"] {
     font-size: 15px;
     font-weight: 500;
 }
-.dashboard-widget {
+.single-widget {
     background-color: #fff;
     padding: 20px;
 }
 .action-btn-group button {
     border: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 32px;
     border-radius: 4px;
 }
 .action-btn-group button:hover{
     background-color: var(--light-gray);
+}
+.action-btn-group i {
+    font-size: 18px;
+    opacity: 0.7;
 }
 .info-single-row b {
     padding-bottom: 8px;
@@ -489,13 +495,13 @@ input[type="submit"] {
     color: #b97171;
     font-weight: 600;
 }
-.dashboard-widget h3 {
+.single-widget h3 {
     font-size: 24px;
     margin-bottom: 20px;
     padding-bottom: 15px;
     position: relative;
 }
-.dashboard-widget h3::after {
+.single-widget h3::after {
     content: "";
     position: absolute;
     width: 60px;
@@ -510,4 +516,24 @@ input[type="submit"] {
     margin-left: auto;
     margin-right: 0;
 }
-/* ----------------- Dashboard Start-------------- */
+/* ----------------- Dashboard End-------------- */
+
+/* ----------------- My Account Start-------------- */
+.my-account-wrapper img {
+    max-width: 180px;
+    border-radius: 100%;
+}
+.my-account-wrapper ul {
+    padding-top: 20px;
+}
+.my-account-wrapper ul li{
+    padding-bottom: 10px;
+}
+.my-account-wrapper ul li span {
+    width: 135px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+/* ----------------- My Account End-------------- */

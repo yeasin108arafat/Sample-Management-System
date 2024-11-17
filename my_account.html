@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New User</title>
+    <title>My Account</title>
 
     
     <!-- Bootstrap CSS -->
@@ -22,7 +22,7 @@
     
     <section class="dashboard-header">
         <div class="header-left">
-            <h2>Register New User</h2>
+            <h2>My Account</h2>
         </div>
         <div class="header-right">
             <div class="notification-point">
@@ -94,72 +94,42 @@
     <section class="main-board-wrapper">
         <div class="main-board-content">
             <div class="breadcrumb-area">
-                <p><a href="dashboard.html">Dashboard</a> <img src="img/icn/arrow-left.svg" alt=""> <a href="users.html">Users</a> <img src="img/icn/arrow-left.svg" alt=""> <b>Add New User</b></p>
+                <p><a href="dashboard.html">Dashboard</a> <img src="img/icn/arrow-left.svg" alt=""> <b>My Account</b></p>
             </div>
-            <div class="single-widget">
-                <h3>User Registration Form </h3>
-                <form action="">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="info-single-row">
-                                <div class="input-wrap">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name">
-                                </div>
-                                <div class="input-wrap">
-                                    <label for="gf_id_no">GF ID No.</label>
-                                    <input type="text" id="gf_id_no" name="gf_id_no">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="info-single-row">
-                                <div class="input-wrap">
-                                    <label for="department">Department</label>
-                                    <select name="department" id="department">
-                                        <option value="">Select --</option>
-                                        <option value="">Store</option>
-                                        <option value="">Merchandising</option>
-                                        <option value="">Sample</option>
-                                    </select>
-                                </div>
-                                <div class="input-wrap">
-                                    <label for="designation">Designation</label>
-                                    <select name="designation" id="designation">
-                                        <option value="">Select --</option>
-                                        <option value="">Head of Department</option>
-                                        <option value="">Officer</option>
-                                        <option value="">Manager</option>
-                                        <option value="">Assistent</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="info-single-row">
-                                <div class="input-wrap">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="input-wrap">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="info-single-row">
-                                <div class="input-wrap">
-                                    <label for="phone">Profile Photo</label>
-                                    <input type="file">
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-widget my-account-wrapper">
+                        <img src="img/profile.png" alt="">
+                        <ul>
+                            <li><span>Name:</span>Yeasin Arafat</li>
+                            <li><span>GF Id:</span>27560</li>
+                            <li><span>Department:</span>Merchandising</li>
+                            <li><span>designation:</span>Ass. Merchandiger</li>
+                        </ul>
                     </div>
-                    <div class="register-btn-area text-right">
-                        <input type="submit" value="Register">
+                </div>
+                <div class="col-md-3">
+                    <div class="single-widget forgot-pass">
+                        <b>Change Password</b>
+                        <form action="" class="pt-3">
+                            <div class="input-wrap">
+                                <label for="current_pass">Current Password</label>
+                                <input type="text" id="current_pass" name="current_pass">
+                            </div>
+                            <div class="input-wrap">
+                                <label for="retype_pass">New Password</label>
+                                <input type="text" id="retype_pass" name="retype_pass">
+                            </div>
+                            <div class="input-wrap">
+                                <label for="retype_new_pass">Retype New Password</label>
+                                <input type="text" id="retype_new_pass" name="retype_new_pass">
+                            </div>
+                            <div class="register-btn-area text-right">
+                                <input type="submit" value="Change">
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
